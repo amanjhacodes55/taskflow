@@ -1,5 +1,7 @@
 # TaskFlow
 
+[![tests](https://github.com/amanjhacodes55/taskflow/actions/workflows/tests.yml/badge.svg)](https://github.com/amanjhacodes55/taskflow/actions/workflows/tests.yml)
+
 A task management app built with **Laravel 13**: a jQuery + Bootstrap dashboard that updates without page reloads, and a versioned **REST API** with Sanctum token authentication. Projects hold tasks, tasks have a status, priority, due date and comments, and the app emails owners about tasks due within a day.
 
 ![The project page](docs/screenshots/project.png)
