@@ -22,7 +22,7 @@ A task management app built with **Laravel 13**: a jQuery + Bootstrap dashboard 
 | **Deadline reminders** | `php artisan tasks:remind` (scheduled hourly) finds open tasks due within 24 h, sends a queued `TaskDueSoon` notification by **mail and database**, and marks the task so nobody is reminded twice. |
 | **Rate limiting** | 60 API requests / minute per user, 5 login attempts / minute per email + IP. |
 | **No N+1 queries** | Eager loading and `withCount` everywhere; `Model::preventLazyLoading()` makes any lazy load throw outside production. |
-| **Tests** | 38 PHPUnit feature tests: auth, CRUD, validation, filtering, pagination, authorization (403s), the AJAX endpoints, XSS escaping and the reminder command. CI runs them plus Laravel Pint on every push. |
+| **Tests** | 41 PHPUnit tests (feature + unit): auth, CRUD, validation, filtering, pagination, authorization (403s), the AJAX endpoints, XSS escaping and the reminder command. CI runs them plus Laravel Pint on every push. |
 | **Docker** | `docker compose up` starts PHP 8.4, MySQL 8.4, a queue worker and the scheduler. |
 
 ## Run it
